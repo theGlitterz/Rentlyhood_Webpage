@@ -10,6 +10,10 @@ body{
     transform: translateX(-50%);
 }
 
+a{
+    text-decoration: none;
+}
+
 .navbar-brand-center img {
     width: 250px;
     max-width: 100%;
@@ -31,13 +35,19 @@ button{
     font-size: 14px;
 }
 
+.bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
 @media (max-width: 767px) {
     .navbar-brand-center {
         position: static;
         transform: none;
     }
     .navbar-brand-center img {
-        width: 100px;
+        width: 220px;
     }
 
     .navbar-brand-left {
@@ -46,6 +56,9 @@ button{
     }
     .navbar-brand-left img {
         width: 40px;
+    }
+    .bottom{
+        margin-bottom: 10px;
     }
 }
 
