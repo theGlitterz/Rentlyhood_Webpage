@@ -1,7 +1,14 @@
+html,
+body {
+  height: 100%;
+}
+
 body{
-    background-image: url("images/Rentlyhood_background.png");
-	background-size: cover;
-	background-position: center;
+    background: linear-gradient(225deg, #2E005B, #4D0198, #8303FF);
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .navbar-brand-center {
@@ -40,6 +47,10 @@ button{
     flex-direction: column;
     justify-content: flex-end;
 }
+
+.footer {
+    margin-top: auto;
+  }
 
 @media (max-width: 767px) {
     .navbar-brand-center {
