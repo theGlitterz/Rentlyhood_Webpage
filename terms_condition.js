@@ -32,3 +32,35 @@ window.addEventListener('scroll', function() {
       }
     }
   });
+
+const hamburgerMenu = document.querySelector('.hamburger-menu');
+const navigation = document.querySelector('.sidenav');
+const header = document.querySelector("header");
+const main = document.querySelector("main");
+const footer = document.querySelector("footer");
+
+hamburgerMenu.addEventListener('click', function() {
+  navigation.classList.toggle('navigation--expanded');
+  header.classList.toggle('hidden');
+  main.classList.toggle('hidden');
+  footer.classList.toggle('hidden');
+});
+
+const navigationLinks = document.querySelectorAll('.sidenav a');
+
+navigationLinks.forEach(function(link) {
+    link.addEventListener('click', function(event) {
+      // Remove active class from all links
+      navigationLinks.forEach(function(link) {
+        link.classList.remove('active');
+      });
+  
+      // Add active class to clicked link
+      link.classList.add('active');
+
+      navigation.classList.toggle('navigation--expanded');
+      header.classList.toggle('hidden');
+      main.classList.toggle('hidden');
+      footer.classList.toggle('hidden');
+    });
+  });  

@@ -118,3 +118,71 @@ body::-webkit-scrollbar-thumb:hover {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
   }
+
+  /* Hamburger menu styling*/
+  .hamburger-menu {
+    display: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding-right: 10px;
+  }
+
+  .hamburger-menu__line {
+    display: block;
+    width: 1.5rem;
+    height: 2px;
+    margin-bottom: 0.3rem;
+    background-color: #333;
+    transition: transform 0.2s ease;
+  }
+  
+  .hamburger-menu__line:last-child {
+    margin-bottom: 0;
+  }
+  
+  .navigation--expanded {
+    max-height: none;
+  }
+  
+  .navigation--expanded .hamburger-menu__line:nth-child(1) {
+    transform: rotate(45deg) translate(0.2rem, 0.2rem);
+  }
+  
+  .navigation--expanded .hamburger-menu__line:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .navigation--expanded .hamburger-menu__line:nth-child(3) {
+    transform: rotate(-45deg) translate(0.2rem, -0.2rem);
+  }
+  
+  @media screen and (max-width: 768px) {
+    .sidenav {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease;
+      width: 100%
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    main {
+      margin-left: 0%; /* Same as the width of the sidenav */
+    }
+  
+    header {
+      margin-left: 0%;
+    }
+  
+    .hamburger-menu {
+      display: block;
+    }
+  
+    .navigation--expanded {
+      max-height: 100%;
+      overflow: auto;
+    }
+  }
