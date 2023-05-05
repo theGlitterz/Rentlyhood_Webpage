@@ -1,0 +1,120 @@
+body{
+    background: white;
+}
+
+header {
+    background: linear-gradient(225deg, #2E005B, #4D0198, #8303FF);
+}
+
+footer {
+    background: linear-gradient(225deg, #2E005B, #4D0198, #8303FF);
+}
+
+h3, h1 {
+  color: #5600A7;
+}
+
+#sidenav-head {
+  background: linear-gradient(225deg, #2E005B, #4D0198, #8303FF);
+  padding-top: 20px;
+  padding: 16px;
+  display: block;
+  font-weight: bold;
+  color: white;
+  font-size: large;
+}
+
+.sidenav {
+    height: 100%;
+    width: 20%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow: auto;
+  }
+
+/* Style the scrollbar */
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.sidenav::-webkit-scrollbar {
+  width: 8px;
+}
+
+.sidenav::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.sidenav::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+.sidenav::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+  
+  .sidenav a {
+    display: block;
+    color: black;
+    padding: 16px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-decoration: none;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .sidenav a.active {
+    color: #5600A7;
+    font-weight: bold;
+  }
+
+  .sidenav a:hover:not(.active) {
+    color: white;
+    background-color: #5600A7;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+    background-color: #5600A7;
+  }
+
+  .subcategory {
+    padding-left: 16px;
+  }
+
+  .subcategory a{
+    font-size: small;
+  }
+  
+  main {
+    margin-left: 20%; /* Same as the width of the sidenav */
+  }
+
+  header {
+    margin-left: 20%;
+  }
+
+  footer {
+    margin-left: 20%;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
