@@ -77,6 +77,7 @@ body::-webkit-scrollbar-thumb:hover {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    background: white;
   }
 
   .sidenav a.active {
@@ -96,6 +97,7 @@ body::-webkit-scrollbar-thumb:hover {
 
   .subcategory {
     padding-left: 16px;
+    background-color: white;
   }
 
   .subcategory a{
@@ -133,16 +135,12 @@ body::-webkit-scrollbar-thumb:hover {
     width: 1.5rem;
     height: 2px;
     margin-bottom: 0.3rem;
-    background-color: #333;
+    background-color: white;
     transition: transform 0.2s ease;
   }
   
   .hamburger-menu__line:last-child {
     margin-bottom: 0;
-  }
-  
-  .navigation--expanded {
-    max-height: none;
   }
   
   .navigation--expanded .hamburger-menu__line:nth-child(1) {
@@ -156,13 +154,24 @@ body::-webkit-scrollbar-thumb:hover {
   .navigation--expanded .hamburger-menu__line:nth-child(3) {
     transform: rotate(-45deg) translate(0.2rem, -0.2rem);
   }
-  
+
+  .navigation--expanded {
+    max-height: none;
+    width: 80%;
+    transition: transform 2s;
+    margin-left: 20%;
+  }
+
+  #sidenav-close{
+    display: none;
+  }
+
   @media screen and (max-width: 768px) {
     .sidenav {
       max-height: 0;
       overflow: hidden;
       transition: max-height 0.2s ease;
-      width: 100%
+      width: 80%
     }
 
     .hidden {
@@ -176,8 +185,16 @@ body::-webkit-scrollbar-thumb:hover {
     header {
       margin-left: 0%;
     }
+
+    footer {
+      margin-left: 0%;
+    }
   
     .hamburger-menu {
+      display: block;
+    }
+
+    #sidenav-close {
       display: block;
     }
   
