@@ -38,12 +38,14 @@ const navigation = document.querySelector('.sidenav');
 const header = document.querySelector("header");
 const main = document.querySelector("main");
 const footer = document.querySelector("footer");
+const sidenavClose = document.querySelector('#sidenav-close');
 
 hamburgerMenu.addEventListener('click', function() {
   navigation.classList.toggle('navigation--expanded');
-  header.classList.toggle('hidden');
-  main.classList.toggle('hidden');
-  footer.classList.toggle('hidden');
+});
+
+sidenavClose.addEventListener('click', function() {
+  navigation.classList.toggle('navigation--expanded');
 });
 
 const navigationLinks = document.querySelectorAll('.sidenav a');
@@ -59,8 +61,5 @@ navigationLinks.forEach(function(link) {
       link.classList.add('active');
 
       navigation.classList.toggle('navigation--expanded');
-      header.classList.toggle('hidden');
-      main.classList.toggle('hidden');
-      footer.classList.toggle('hidden');
     });
-  });  
+  });
