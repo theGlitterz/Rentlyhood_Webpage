@@ -1,21 +1,22 @@
-body{
-    background: white;
+body {
+  background: white;
 }
 
 header {
-    background: linear-gradient(225deg, #2E005B, #4D0198, #8303FF);
+  background: linear-gradient(225deg, #2e005b, #4d0198, #8303ff);
 }
 
 footer {
-    background: linear-gradient(225deg, #2E005B, #4D0198, #8303FF);
+  background: linear-gradient(225deg, #2e005b, #4d0198, #8303ff);
 }
 
-h3, h1 {
-  color: #5600A7;
+h3,
+h1 {
+  color: #5600a7;
 }
 
 #sidenav-head {
-  background: linear-gradient(225deg, #2E005B, #4D0198, #8303FF);
+  background: linear-gradient(225deg, #2e005b, #4d0198, #8303ff);
   padding-top: 20px;
   padding: 16px;
   display: block;
@@ -25,14 +26,14 @@ h3, h1 {
 }
 
 .sidenav {
-    height: 100%;
-    width: 20%;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    overflow: auto;
-  }
+  height: 100%;
+  width: 20%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow: auto;
+}
 
 /* Style the scrollbar */
 body::-webkit-scrollbar {
@@ -66,140 +67,144 @@ body::-webkit-scrollbar-thumb:hover {
 .sidenav::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
-  
+
+.sidenav a {
+  display: block;
+  color: black;
+  padding: 16px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-decoration: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  background: white;
+}
+
+.sidenav a.active {
+  color: #5600a7;
+  font-weight: bold;
+}
+
+.sidenav a:hover:not(.active) {
+  color: white;
+  background-color: #5600a7;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+  background-color: #5600a7;
+}
+
+.subcategory {
+  padding-left: 16px;
+  background-color: white;
+}
+
+.subcategory a {
+  font-size: small;
+}
+
+main {
+  margin-left: 20%; /* Same as the width of the sidenav */
+}
+
+header {
+  margin-left: 20%;
+}
+
+footer {
+  margin-left: 20%;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
   .sidenav a {
-    display: block;
-    color: black;
-    padding: 16px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    text-decoration: none;
-    white-space: nowrap;
+    font-size: 18px;
+  }
+}
+
+/* Hamburger menu styling*/
+.hamburger-menu {
+  display: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding-right: 10px;
+}
+
+.hamburger-menu__line {
+  display: block;
+  width: 1.5rem;
+  height: 2px;
+  margin-bottom: 0.3rem;
+  background-color: white;
+  transition: transform 0.2s ease;
+}
+
+.hamburger-menu__line:last-child {
+  margin-bottom: 0;
+}
+
+.navigation--expanded .hamburger-menu__line:nth-child(1) {
+  transform: rotate(45deg) translate(0.2rem, 0.2rem);
+}
+
+.navigation--expanded .hamburger-menu__line:nth-child(2) {
+  opacity: 0;
+}
+
+.navigation--expanded .hamburger-menu__line:nth-child(3) {
+  transform: rotate(-45deg) translate(0.2rem, -0.2rem);
+}
+
+.navigation--expanded {
+  max-height: none;
+  width: 80%;
+  transition: transform 2s;
+  margin-left: 20%;
+}
+
+#sidenav-close {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .sidenav {
+    max-height: 0;
     overflow: hidden;
-    text-overflow: ellipsis;
-    background: white;
+    transition: max-height 0.2s ease;
+    width: 80%;
   }
 
-  .sidenav a.active {
-    color: #5600A7;
-    font-weight: bold;
+  .hidden {
+    display: none;
   }
 
-  .sidenav a:hover:not(.active) {
-    color: white;
-    background-color: #5600A7;
-  }
-  
-  .sidenav a:hover {
-    color: #f1f1f1;
-    background-color: #5600A7;
-  }
-
-  .subcategory {
-    padding-left: 16px;
-    background-color: white;
-  }
-
-  .subcategory a{
-    font-size: small;
-  }
-  
   main {
-    margin-left: 20%; /* Same as the width of the sidenav */
+    margin-left: 0%; /* Same as the width of the sidenav */
   }
 
   header {
-    margin-left: 20%;
+    margin-left: 0%;
   }
 
   footer {
-    margin-left: 20%;
-  }
-  
-  @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
+    margin-left: 0%;
   }
 
-  /* Hamburger menu styling*/
   .hamburger-menu {
-    display: none;
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-    padding-right: 10px;
+    display: block;
   }
 
-  .hamburger-menu__line {
+  #sidenav-close {
     display: block;
-    width: 1.5rem;
-    height: 2px;
-    margin-bottom: 0.3rem;
-    background-color: white;
-    transition: transform 0.2s ease;
-  }
-  
-  .hamburger-menu__line:last-child {
-    margin-bottom: 0;
-  }
-  
-  .navigation--expanded .hamburger-menu__line:nth-child(1) {
-    transform: rotate(45deg) translate(0.2rem, 0.2rem);
-  }
-  
-  .navigation--expanded .hamburger-menu__line:nth-child(2) {
-    opacity: 0;
-  }
-  
-  .navigation--expanded .hamburger-menu__line:nth-child(3) {
-    transform: rotate(-45deg) translate(0.2rem, -0.2rem);
   }
 
   .navigation--expanded {
-    max-height: none;
-    width: 80%;
-    transition: transform 2s;
-    margin-left: 20%;
+    max-height: 100%;
+    overflow: auto;
   }
-
-  #sidenav-close{
-    display: none;
-  }
-
-  @media screen and (max-width: 768px) {
-    .sidenav {
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.2s ease;
-      width: 80%
-    }
-
-    .hidden {
-      display: none;
-    }
-
-    main {
-      margin-left: 0%; /* Same as the width of the sidenav */
-    }
-  
-    header {
-      margin-left: 0%;
-    }
-
-    footer {
-      margin-left: 0%;
-    }
-  
-    .hamburger-menu {
-      display: block;
-    }
-
-    #sidenav-close {
-      display: block;
-    }
-  
-    .navigation--expanded {
-      max-height: 100%;
-      overflow: auto;
-    }
-  }
+}
