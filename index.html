@@ -1,159 +1,525 @@
-<!DOCTYPE html>
-<html lang="en" class="h-100">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rentlyhood</title>
-    <link href="images/Rentlyhood_logo.png" rel="icon">
+<!doctype html>
+<html class="no-js" lang="zxx" scroll-behavior: smooth;>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Rentlyhood</title>
+        <meta name="description" content="Rentlyhood is your go-to platform for renting items from your neighborhood, lending to earn a livelihood, and contributing to a more sustainable planet. Explore our wide range of rentals today." />
+        <meta name="keywords" content="Rentlyhood, rent from neighborhood, lend and earn livelihood, care for planet, sustainable living, community rentals" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="geo.region" content="IE" />
+        <meta name="geo.placename" content="Dublin" />
+        <meta name="geo.position" content="53.349805;-6.26031" />
+        <meta name="ICBM" content="53.349805, -6.26031" />
+        <link rel="manifest" href="site.webmanifest">
+		<link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/logo.png">
 
-    <!-- CDN Booststrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous">
-    <link href="index.css" rel="stylesheet">
+		<!-- CSS here -->
+            <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+            <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+            <link rel="stylesheet" href="assets/css/flaticon.css">
+            <link rel="stylesheet" href="assets/css/slicknav.css">
+            <link rel="stylesheet" href="assets/css/animate.min.css">
+            <link rel="stylesheet" href="assets/css/magnific-popup.css">
+            <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+            <link rel="stylesheet" href="assets/css/themify-icons.css">
+            <link rel="stylesheet" href="assets/css/slick.css">
+            <link rel="stylesheet" href="assets/css/nice-select.css">
+            <link rel="stylesheet" href="assets/css/style.css">
+   </head>
 
-    <!-- Add the following line to link the Roboto font -->
-    <link rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Roboto">
-
-    <!-- Font-Awesome Javascript -->
-    <script src="https://kit.fontawesome.com/5e201c1eea.js"
-      crossorigin="anonymous"></script>
-
-  </head>
-  <body>
+   <body>
+       
+    <!-- Preloader Start -->
+    <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="preloader-circle"></div>
+                <div class="preloader-img pere-text">
+                    <img src="assets/img/logo/logo.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Preloader Start -->
 
     <header>
-      <nav class="navbar navbar-expand-lg">
-        <div class="pt-3">
-          <a class="navbar-brand navbar-brand-left px-4" href="index.html">
-            <img src="images/Rentlyhood_logo.png" alt="Logo Left" width="60">
-          </a>
-          <a class="navbar-brand navbar-brand-center mx-auto" href="index.html">
-            <img src="images/Rentlyhood_text.png" alt="Logo Center">
-          </a>
-        </div>
-      </nav>
+        <!-- Header Start -->
+       <div class="header-area header-white ">
+            <div class="main-header header-sticky">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <!-- Logo -->
+                        <div class="col-xl-2 col-lg-2 col-md-2">
+                            <div class="logo p-2">
+                                <a href="index.html"><img src="assets/img/logo/logo.png" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="col-xl-10 col-lg-10 col-md-10">
+                            <!-- Main-menu -->
+                            <div class="main-menu f-right d-none d-lg-block">
+                                <nav>
+                                    <ul id="navigation">    
+                                        <li class="active"><a href="#"> Home</a></li>
+                                        <li><a href="#whyrentlyhood">Why Rentlyhood</a></li>
+                                        <li><a href="#ourpillars">Our Pillars</a></li>
+                                        <li><a href="#ideas">Ideas</a></li> 
+                                        <li><a href="#howitworks">How it works</a></li>
+                                        <li><a href="#download">Download Now</a></li>
+                                        <li><a href="#contactus">Contact</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <!-- Mobile Menu -->
+                        <div class="col-12">
+                            <div class="mobile_menu d-block d-lg-none"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </div>
+        <!-- Header End -->
     </header>
 
-
     <main>
-      <div class="container-fluid py-5">
-        <div class="row">
-          <div class="col-md-7">
-            <div class="container">
-              <h1 class="fw-bold display-2" style="font-family: 'Roboto',
-                sans-serif; color: #FFC300;">We are now live!</h1>
-              <p class="h6 mb-4 text-light">Download our app and start renting</p>
-              <div class="row">
-                <div class="col-md-6 d-flex flex-column align-items-center">
-                  <a href="https://apps.apple.com/ie/app/rentlyhood/id6447560745" class="text-center"><img
-                      src="images/Apple-app-store-qrCode.jpg" alt="Apple
-                      appstore Qr Code" class="img-fluid" style="max-width:
-                      60%;"></a>
-                  <a href="https://apps.apple.com/ie/app/rentlyhood/id6447560745" class="text-center"><img
-                      src="images/Download-it-on-apple-store.png" alt=""
-                      class="img-fluid" style="max-width: 40%;"></a>
-                </div>
-                <div class="col-md-6 d-flex flex-column align-items-center">
-                  <a href="https://play.google.com/store/apps/details?id=com.rentlyhood.android&gl=IE" class="text-center"><img
-                      src="images/Google-app-store-qrCode.jpg" alt="Google
-                      playstore Qr Code" class="img-fluid" style="max-width:
-                      60%;"></a>
-                  <a href="https://play.google.com/store/apps/details?id=com.rentlyhood.android&gl=IE" class="text-center"><img
-                      src="images/Download-it-on-google-play.png" alt="Google
-                      playstore Qr Code" class="img-fluid" style="max-width:
-                      40%;"></a>
-                </div>
 
-
-              </div>
+        <!-- Slider Area Start-->
+        <div class="slider-area ">
+            <div class="slider-active">
+                <div class="single-slider slider-padding sky-blue d-flex align-items-center">
+                    <div class="container">
+                        <div class="row d-flex align-items-center">
+                            <div class="col-lg-6 col-md-9 ">
+                                <div class="hero__caption">
+                                    <span data-animation="fadeInUp" data-delay=".4s"></span>
+                                    <h1 class="text-white" data-animation="fadeInUp" data-delay=".6s">Rentlyhood</h1>
+                                    <h2 class="text-white" data-animation="fadeInUp" data-delay=".6s">Renting Simplified, Connections Amplified</h2> 
+                                    <p class="text-white" data-animation="fadeInUp" data-delay=".8s">An online peer-to-peer platform which aims to connect people in close neighbourhoods and enable them to rent, lend and share their household items </p>
+                                    <!-- Slider btn -->
+                                   <div class="slider-btns">
+                                        <!-- Hero-btn -->
+                                        <a data-animation="fadeInLeft" data-delay="1.0s" onclick="downloadButtonFunction()" class="btn radius-btn">Download</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="hero__img d-none d-lg-block f-right" data-animation="fadeInRight" data-delay="1s">
+                                    <img src="assets/img/hero/rentlyhood homepage.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
             </div>
-          </div>
-          <div class="col-md-5 d-flex flex-column align-items-center">
-            <img src="images/Rentlyhood.png" class="img-fluid" alt="Rent Lend
-              Care">
-            <p class="text-light text-center">Rent items from your neighbourhood</p>
-          </div>
         </div>
-      </div>
+        <!-- Slider Area End -->
+        
+        <!-- Best Features Start -->
+        <section class="best-features-area section-padd4" id="whyrentlyhood">
+            <div class="container">
+                <div class="row justify-content-end">
+                    <div class="col-xl-8 col-lg-10">
+                        <!-- Section Tittle -->
+                        <div class="row">
+                            <div class="col-lg-10 col-md-10">
+                                <div class="section-tittle">
+                                    <h2>Why Rentlyhood?</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Section caption -->
+                        <div class="row">
+                            <div class="col-xl-6 col-lg-6 col-md-6">
+                                <div class="single-features mb-70">
+                                    <div class="features-icon">
+                                        <span><img style="width: 40px; height:40px;" src="assets/img/shape/feature icon.png"></span>
+                                    </div>
+                                    <div class="features-caption">
+                                        <h3>Zero cost</h3>
+                                        <p>Renting out items and listing your items for rent is completely free on Rentlyhood</p>
+                                    </div>
+                                </div>
+                            </div>
+                             <div class="col-xl-6 col-lg-6 col-md-6">
+                                <div class="single-features mb-70">
+                                    <div class="features-icon">
+                                        <span><img style="width: 40px; height:40px;" src="assets/img/shape/feature icon.png"></span>
+                                    </div>
+                                    <div class="features-caption">
+                                        <h3>Rentlyhood Guarantee</h3>
+                                        <p>Guarantee to ensure that renting and lending items can be done safely and without any worries</p>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="col-xl-6 col-lg-6 col-md-6">
+                                <div class="single-features mb-70">
+                                    <div class="features-icon">
+                                        <span><img style="width: 40px; height:40px;" src="assets/img/shape/feature icon.png"></span>
+                                    </div>
+                                    <div class="features-caption">
+                                        <h3>Community Building</h3>
+                                        <p>Build vibrant community where connections thrive, and neighbors come together to build strong and supportive rental landscape</p>
+                                    </div>
+                                </div>
+                            </div>
+                             <div class="col-xl-6 col-lg-6 col-md-6">
+                                <div class="single-features">
+                                    <div class="features-icon">
+                                        <span><img style="width: 40px; height:40px;" src="assets/img/shape/feature icon.png"></span>
+                                    </div>
+                                    <div class="features-caption">
+                                        <h3>Care for Environment</h3>
+                                        <p>Rentlyhood empowers renters to make sustainable choices and nurture a greener future one rental at a time</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Shpe -->
+            <div class="features-shpae d-none d-lg-block">
+                <img src="assets/img/shape/best-features.png" alt="">
+            </div>
+        </section>
+        <!-- Best Features End -->
+        
+        <!-- Services Area Start -->
+        <section class="service-area sky-blue section-padding2" id="ourpillars">
+            <div class="container">
+                <!-- Section Tittle -->
+                <div class="row d-flex justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="section-tittle text-center">
+                            <h2 class="text-white">Three core pillars of Rentlyhood</h2>
+                        </div>
+                    </div>
+                </div>
+                <!-- Section caption -->
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 col-md-6">
+                        <div class="services-caption text-center mb-30">
+                            <div class="service-icon">
+                                <span><img style="width: 90px;" src="assets/img/shape/give-gift.png"></span>
+                            </div> 
+                            <div class="service-cap">
+                                <h2><a href="#">RENT</a></h2>
+                                <h5>what you need,<br>when you need,<br>without having to buy</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6">
+                        <div class="services-caption text-center mb-30">
+                            <div class="service-icon">
+                                <span><img style="width: 100px;" src="assets/img/shape/forgive.png"></span>
+                            </div> 
+                            <div class="service-cap">
+                                <h2><a href="#">LEND</a></h2>
+                                <h5>your extra items,<br>help others,<br>earn some cash</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6">
+                        <div class="services-caption text-center mb-30">
+                            <div class="service-icon">
+                                <span><img style="width: 90px;" src="assets/img/shape/save-the-planet.png"></span>
+                            </div> 
+                            <div class="service-cap">
+                                <h2><a href="#">CARE</a></h2>
+                                <h5>for planet,<br>support sustainability,<br>make a difference</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Services Area End -->
+        
+        <!-- Rentlyhood App ideas Start -->
+        <div class="applic-apps section-padding2" id="ideas">
+            <div class="container-fluid">
+                <div class="row">
+                    <!-- slider Heading -->
+                    <div class="col-xl-4 col-lg-4 col-md-8">
+                        <div class="single-cases-info mb-30">
+                            <h3>Need some ideas?</h3>
+                            <p>Here are some items that you can rent or lend on Rentlyhood</p>
+                        </div>
+                    </div>
+                    <!-- OwL -->
+                    <div class="col-xl-8 col-lg-8 col-md-col-md-7">
+                        <div class="app-active owl-carousel"> 
+                            <div class="single-cases-img">
+                                <img src="assets/img/gallery/3.png" alt="">
+                            </div>
+                            <div class="single-cases-img">
+                                <img src="assets/img/gallery/4.png" alt="">
+                            </div>
+                            <div class="single-cases-img">
+                                <img src="assets/img/gallery/5.png" alt="">
+                            </div>
+                            <div class="single-cases-img">
+                                <img src="assets/img/gallery/1.png" alt="">
+                            </div>
+                            <div class="single-cases-img">
+                                <img src="assets/img/gallery/2.png" alt="">
+                            </div>
+                            <div class="single-cases-img">
+                                <img src="assets/img/gallery/6.png" alt="">
+                            </div>
+                            <div class="single-cases-img">
+                                <img src="assets/img/gallery/7.png" alt="">
+                            </div>
+                            <div class="single-cases-img">
+                                <img src="assets/img/gallery/8.png" alt="">
+                            </div>
+                            <div class="single-cases-img">
+                                <img src="assets/img/gallery/9.png" alt="">
+                            </div>
+                           
+                            <div class="single-cases-img">
+                                <img src="assets/img/gallery/11.png" alt="">
+                            </div>
+                            <div class="single-cases-img">
+                                <img src="assets/img/gallery/12.png" alt="">
+                            </div>
+                            <div class="single-cases-img">
+                                <img src="assets/img/gallery/13.png" alt="">
+                            </div>
+                            <div class="single-cases-img">
+                                <img src="assets/img/gallery/14.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Rentlyhood App ideas End -->
+        
+        <!-- How Rentlyhood Works Start -->
+        <section class="best-pricing pricing-padding" data-background="assets/img/gallery/best_pricingbg.jpg" id="howitworks">
+            <div class="container">
+                <!-- Section Tittle -->
+                <div class="row d-flex justify-content-center">
+                    <div class="col-lg-6 col-md-8">
+                        <div class="section-tittle section-tittle2 text-center">
+                            <h2>How Rentlyhood Works</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- How Rentlyhood Works End -->
+
+        <!-- How Rentlyhood Works Card Start -->
+        <div class="pricing-card-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                        <div class="single-card text-center mb-50">
+                            <div class="card-top">
+                                <h4>How to Rent?</h4>
+                                <img src="assets/img/shape/Photo Sharing-bro.png" style="max-width: 100%;">
+                            </div>
+                            <div class="card-bottom text-left">
+                                <ul class="mx-3">
+                                    <li>Search for the item on Rentlyhood app</li>
+                                    <li>Choose dates and submit the booking request</li>
+                                    <li>Make payment once lender approves booking request</li>
+                                </ul>
+                            </div>
+                        <a data-animation="fadeInRight" data-delay="1.0s" class="popup-video btn rent-lend-play-btn ani-btn" href="https://www.instagram.com/reel/Cs4EHYDo_5w/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==" target="_blank"><i class="fas fa-play"></i> &ensp; Watch Tutorial</a>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                        <div class="single-card text-center mb-30">
+                            <div class="card-top">
+                                <h4>How to Lend?</h4>
+                                <img src="assets/img/shape/App monetization-pana.png" style="max-width: 100%;">
+                            </div>
+                            <div class="card-bottom text-left">
+                                <ul class="mx-3">
+                                    <li>In lender profile of Rentlyhood app, click 'Create New Listing'</li>
+                                    <li>Enter details of item and upload photos</li>
+                                    <li>Submit for Approval</li>
+                             
+                                </ul>
+                            </div>
+                            <a href="https://www.instagram.com/reel/CtbsjNnI9lg/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==" target="_blank" class="popup-video btn rent-lend-play-btn ani-btn"><i class="fas fa-play"></i> &ensp; Watch Tutorial</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- How Rentlyhood Works Card End -->
+
+        <!-- Available App  Start-->
+        <div class="available-app-area" id="download">
+            <div class="container">
+                <div class="row d-flex justify-content-between">
+                    <div class="col-xl-5 col-lg-6">
+                        <div class="app-caption">
+                            <div class="section-tittle section-tittle3">
+                                <h2>Download Our App and Start Renting Now</h2>
+                                <p>Ready to unlock the full potential of Rentlyhood? Download our app now and experience a seamless and empowering renting journey at your fingertips</p>
+                                <div class="app-btn">
+                                    <a href="https://apps.apple.com/ie/app/rentlyhood/id6447560745" class="app-btn1"><img src="assets/img/shape/app_btn1.png" alt=""></a>
+                                    <a href="https://play.google.com/store/apps/details?id=com.rentlyhood.android&gl=IE" class="app-btn2"><img src="assets/img/shape/app_btn2.png" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6">
+                        <div class="app-img">
+                            <img src="assets/img/shape/open-an-online-store.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Shape -->
+            <div class="app-shape">
+                <img src="assets/img/shape/app-shape-top.png" alt="" class="app-shape-top heartbeat d-none d-lg-block">
+                <img src="assets/img/shape/app-shape-left.png" alt="" class="app-shape-left d-none d-xl-block">
+                <!-- <img src="assets/img/shape/app-shape-right.png" alt="" class="app-shape-right bounce-animate "> -->
+            </div>
+        </div>
+        <!-- Available App End-->
     </main>
+   <footer>
 
-
-    <footer class="footer mt-auto py-3">
-      <div class="row mx-2">
-        <div class="col-md-2 col-sm-12 mb-5">
-          <p class="h6 mb-4 text-light">Follow our journey</p>
-          <ul class="p-0" style="list-style: none; cursor: pointer">
-            <li class="my-2">
-              <a class="text-light font-size-sm"
-                href="https://www.instagram.com/rentlyhood/"><i class="fa-brands
-                  fa-instagram" aria-hidden="true"></i> Instagram</a>
-            </li>
-            <li class="my-2">
-              <a class="text-light font-size-sm"
-                href="https://www.tiktok.com/@rentlyhood?_t=8b3AzGs2qa2&_r=1"><i
-                  class="fa-brands fa-tiktok"></i> TikTok</a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-md-3 col-sm-12 mb-5">
-          <p class="h6 mb-4 text-light">Contact Us</p>
-          <ul class="p-0" style="list-style: none;">
-            <li class="my-2">
-              <span class="text-light font-size-sm"><i class="fa-solid
-                  fa-phone"></i> +353 899 512 148</span>
-            </li>
-            <li class="my-2">
-              <a href="mailto:contact@rentlyhood.com" class="text-light
-                font-size-sm"><i class="fa-solid fa-envelope"></i>
-                contact@rentlyhood.com</a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-md-3 col-sm-12 mb-5">
-          <p class="h6 mb-4 text-light">Download the app</p>
-          <ul class="p-0" style="list-style: none; cursor: pointer">
-            <li class="my-2">
-              <a class="text-light font-size-sm" href="https://apps.apple.com/ie/app/rentlyhood/id6447560745"><i class="fa-brands
-                  fa-app-store-ios"></i> Apple store</a>
-            </li>
-            <li class="my-2">
-              <a class="text-light font-size-sm" href="https://play.google.com/store/apps/details?id=com.rentlyhood.android&gl=IE"><i class="fa-brands
-                  fa-google-play"></i> Google playstore</a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-md-1 col-sm-12 bottom">
-          <a href="terms_conditions.html" class="text-light font-size-sm
-            mr-auto">Terms and Conditions</a>
-        </div>
-        <div class="col-md-1 col-sm-12 bottom">
-          <a href="privacy_policy.html" class="text-light font-size-sm mr-auto">Privacy
-            Policy</a>
-        </div>
-        <div class="col-md-2 col-sm-12 bottom">
-          <span class="text-light font-size-sm">
-            Copyright 2023. Made with <img src="images/Heart.png" alt="Love"
-              class="d-inline mx-1" width="16" height="16"> by <a
-              href="https://www.theglitterz.com/"><img
-                src="images/Glitterz_logo.png" class="d-inline mx-1" width="80"
-                height="20"></a>
-          </span>
+       <!-- Footer Start-->
+       
+      <div class="footer-main" id="contactus">
+        <div class="footer-area footer-padding">
+            <div class="container">
+                <div class="row  justify-content-between">
+                    <div class="col-lg-3 col-md-4 col-sm-8">
+                         <div class="single-footer-caption mb-30">
+                              <!-- logo -->
+                             <div class="footer-logo">
+                                 <a href="index.html"><img src="assets/img/logo/logo2_footer.png" alt=""></a>
+                             </div>
+                             <div class="footer-tittle">
+                                 <div class="footer-pera">
+                                     <!--<p class="info1">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore.</p> -->
+                                </div>
+                             </div>
+                         </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-5">
+                        <div class="single-footer-caption mb-50">
+                            <div class="footer-tittle">
+                                <h4>Socials</h4>
+                                <ul>
+                                    <li> <img src="assets/img/logo/instagram.ico" width="20" height="20">&nbsp;&nbsp;<a href="https://www.instagram.com/rentlyhood/">Instagram</a></li>
+                                    <li><img src="assets/img/logo/tiktok.png" width="20" height="20">&nbsp;&nbsp;<a href="https://www.tiktok.com/@rentlyhood">TikTok</a></li>
+                                    <li><img src="assets/img/logo/apple.png" width="20" height="20">&nbsp;&nbsp;<a href="https://apps.apple.com/ie/app/rentlyhood/id6447560745">Apple App Store</a></li>
+                                    <li><img src="assets/img/logo/google-play-store.png" width="20" height="20">&nbsp;&nbsp;<a href="https://play.google.com/store/apps/details?id=com.rentlyhood.android&gl=IE">Google Play Store</a></li>
+                              
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-7">
+                        <div class="single-footer-caption mb-50">
+                            <div class="footer-tittle">
+                                <h4>Contact</h4>
+                                <ul>
+                                    <li><a href="#">+353 899 512 148</a></li>
+                                    <li><a href="mailto:">contact@rentlyhood.com</a></li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-8">
+                        <div class="single-footer-caption mb-50">
+                             <div class="footer-tittle">
+                                   <h4>Important Links</h4>
+                               <ul>
+                                <li><a href="terms_conditions.html">Terms & Conditions</a></li>
+                                <li><a href="privacy_policy.html">Privacy Policy</a></li>
+                                <li><a href="eula.html">EULA</a></li>
+                            </ul>
+                                  
+                             </div>
+                             <!-- Form -->
+                             <div class="footer-form">
+                                 <div id="mc_embed_signup">
+                                     <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="subscribe_form relative mail_part" novalidate="true">
+                                         <!-- <input type="email" name="EMAIL" id="newsletter-form-email" placeholder=" Email Address " class="placeholder hide-on-focus" onfocus="this.placeholder = ''" onblur="this.placeholder = ' Email Address '">
+                                         <div class="form-icon">
+                                             <button type="submit" name="submit" id="newsletter-submit" class="email_icon newsletter-submit button-contactForm"><img src="assets/img/shape/form_icon.png" alt=""></button>
+                                         </div> -->
+                                         <div class="mt-10 info"></div>
+                                     </form>
+                                 </div>
+                             </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              
+                <div class="row align-items-center">
+                    <div class="col-xl-12 ">
+                        
+                        <div class="col-xl-12 ">
+                            <div class="footer-copy-right">
+                                <p style="text-align:center"> 
+                              Copyright 2023. Made with <img src="assets/img/logo/Heart.png" alt="Love"
+                                class="d-inline mx-1" width="16" height="16"> by <a
+                                href="https://www.theglitterz.com/"><img
+                                  src="assets/img/logo/Glitterz_logo.png" class="d-inline mx-1" width="80"
+                                  height="20"></a>
+                          </p>
+                          </div>
+                    </div>
+                </div>
+            </div>
         </div>
       </div>
-    </footer>
+       <!-- Footer End-->
 
+   </footer>
+   
+	<!-- JS here -->
+	
+		<!-- All JS Custom Plugins Link Here here -->
+        <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
+		
+		<!-- Jquery, Popper, Bootstrap -->
+		<script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
+        <script src="./assets/js/popper.min.js"></script>
+        <script src="./assets/js/bootstrap.min.js"></script>
+	    <!-- Jquery Mobile Menu -->
+        <script src="./assets/js/jquery.slicknav.min.js"></script>
 
-    <!-- Bootstrap JS -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
-    <script src="script.js"></script>
+		<!-- Jquery Slick , Owl-Carousel Plugins -->
+        <script src="./assets/js/owl.carousel.min.js"></script>
+        <script src="./assets/js/slick.min.js"></script>
+        <!-- Date Picker -->
+        <script src="./assets/js/gijgo.min.js"></script>
+		<!-- One Page, Animated-HeadLin -->
+        <script src="./assets/js/wow.min.js"></script>
+		<script src="./assets/js/animated.headline.js"></script>
+        <script src="./assets/js/jquery.magnific-popup.js"></script>
 
-  </body>
+		<!-- Scrollup, nice-select, sticky -->
+        <script src="./assets/js/jquery.scrollUp.min.js"></script>
+        <script src="./assets/js/jquery.nice-select.min.js"></script>
+		<script src="./assets/js/jquery.sticky.js"></script>
+        
+        <!-- contact js -->
+        <script src="./assets/js/contact.js"></script>
+        <script src="./assets/js/jquery.form.js"></script>
+        <script src="./assets/js/jquery.validate.min.js"></script>
+        <script src="./assets/js/mail-script.js"></script>
+        <script src="./assets/js/jquery.ajaxchimp.min.js"></script>
+        
+		<!-- Jquery Plugins, main Jquery -->	
+        <script src="./assets/js/plugins.js"></script>
+        <script src="./assets/js/main.js"></script>
+        
+    </body>
 </html>
